@@ -3,13 +3,21 @@
 		{"id":"fe90147f5898d086","type":"file","file":"Client Side.md","x":-200,"y":-180,"width":620,"height":460},
 		{"id":"e25e59b22450728a","type":"file","file":"Game Mathematics.md","x":-200,"y":580,"width":620,"height":420},
 		{"id":"8c7b0548babaab26","type":"text","text":"# Gamedev\n","x":295,"y":-480,"width":250,"height":60},
-		{"id":"7f005e3aafd280b9","x":-1080,"y":331,"width":565,"height":389,"type":"file","file":"Linear Algebra.md"},
-		{"id":"0a846f97395a6032","x":-1080,"y":790,"width":400,"height":132,"type":"file","file":"Vector.md"}
+		{"id":"0a846f97395a6032","x":-1440,"y":724,"width":400,"height":132,"type":"file","file":"Vector.md"},
+		{"id":"9fc54576bedfdf8c","x":-997,"y":736,"width":400,"height":120,"type":"file","file":"Matrix.md"},
+		{"id":"4e32626b709e0bd1","x":-997,"y":866,"width":400,"height":134,"type":"file","file":"Linear Transformation.md"},
+		{"id":"60fe2d164ec45f5d","x":-1445,"y":880,"width":411,"height":120,"type":"file","file":"Geometry.md"},
+		{"id":"7f005e3aafd280b9","x":-1440,"y":280,"width":843,"height":389,"type":"file","file":"Linear Algebra.md"},
+		{"id":"9af7f5223771eb7d","x":-997,"y":1040,"width":400,"height":120,"type":"file","file":"Affine Space.md"}
 	],
 	"edges":[
 		{"id":"56dfc3d270e6a5d1","fromNode":"fe90147f5898d086","fromSide":"bottom","toNode":"e25e59b22450728a","toSide":"top"},
 		{"id":"b8877c1879cbced6","fromNode":"8c7b0548babaab26","fromSide":"bottom","toNode":"fe90147f5898d086","toSide":"top"},
 		{"id":"b1259692c7256eb6","fromNode":"e25e59b22450728a","fromSide":"left","toNode":"7f005e3aafd280b9","toSide":"right"},
-		{"id":"109da51e373af214","fromNode":"e25e59b22450728a","fromSide":"left","toNode":"0a846f97395a6032","toSide":"right"}
+		{"id":"109da51e373af214","fromNode":"e25e59b22450728a","fromSide":"left","toNode":"0a846f97395a6032","toSide":"right"},
+		{"id":"c556fdcfcf24006c","fromNode":"e25e59b22450728a","fromSide":"left","toNode":"9fc54576bedfdf8c","toSide":"right"},
+		{"id":"e883c0cc23392310","fromNode":"e25e59b22450728a","fromSide":"left","toNode":"4e32626b709e0bd1","toSide":"right"},
+		{"id":"b26c495877d3ea0b","fromNode":"e25e59b22450728a","fromSide":"left","toNode":"60fe2d164ec45f5d","toSide":"right"},
+		{"id":"d152bc22610cd492","fromNode":"e25e59b22450728a","fromSide":"left","toNode":"9af7f5223771eb7d","toSide":"right"}
 	]
 }
