@@ -1,9 +1,6 @@
 {
 	"nodes":[
-		{"id":"30c4c23a26a1a0f0","x":160,"y":-88,"width":86,"height":68,"type":"text","text":""},
-		{"id":"080d78e45dc6e3fd","type":"text","text":"FEAfefaef","x":-180,"y":-84,"width":250,"height":60}
+		{"id":"30c4c23a26a1a0f0","x":-160,"y":-280,"width":280,"height":180,"type":"text","text":"# Client Side"}
 	],
-	"edges":[
-		{"id":"91835373cb6218e5","fromNode":"30c4c23a26a1a0f0","fromSide":"left","toNode":"080d78e45dc6e3fd","toSide":"right"}
-	]
+	"edges":[]
 }
