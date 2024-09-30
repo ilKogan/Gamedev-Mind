@@ -1,6 +1,7 @@
 {
 	"nodes":[
 		{"id":"c996b9cbd09e1267","type":"group","x":-1800,"y":-40,"width":940,"height":1639,"label":"Game math"},
+		{"id":"40f0567f6dd0484b","x":1377,"y":-290,"width":400,"height":400,"type":"file","file":"Dependency Injection.md"},
 		{"id":"fe90147f5898d086","type":"file","file":"Client Side.md","x":-200,"y":-180,"width":280,"height":60},
 		{"id":"8c7b0548babaab26","type":"text","text":"# Gamedev\n","x":295,"y":-480,"width":250,"height":60},
 		{"id":"92784e45a7e8ae8d","x":720,"y":-120,"width":440,"height":80,"type":"file","file":"Programming Techniques.md"},
@@ -26,6 +27,7 @@
 		{"id":"14348ad453c1ad29","fromNode":"83ce0c340734ec72","fromSide":"left","toNode":"085183da49190ad9","toSide":"right"},
 		{"id":"f382fb543ac0fecc","fromNode":"83ce0c340734ec72","fromSide":"left","toNode":"1612c9709a8e6246","toSide":"right"},
 		{"id":"7190792ba480da99","fromNode":"e25e59b22450728a","fromSide":"left","toNode":"c996b9cbd09e1267","toSide":"right"},
-		{"id":"083b8435f9474a6c","fromNode":"8c7b0548babaab26","fromSide":"bottom","toNode":"92784e45a7e8ae8d","toSide":"top"}
+		{"id":"083b8435f9474a6c","fromNode":"8c7b0548babaab26","fromSide":"bottom","toNode":"92784e45a7e8ae8d","toSide":"top"},
+		{"id":"fa26cd9107d55b95","fromNode":"92784e45a7e8ae8d","fromSide":"right","toNode":"40f0567f6dd0484b","toSide":"left"}
 	]
 }
