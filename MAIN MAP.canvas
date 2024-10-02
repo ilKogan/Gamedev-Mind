@@ -1,6 +1,6 @@
 {
 	"nodes":[
-		{"id":"3c202402e32b7554","x":-1265,"y":1840,"width":2465,"height":1120,"type":"group","label":"Colision Detection"},
+		{"id":"3c202402e32b7554","x":-1265,"y":1559,"width":2465,"height":1401,"type":"group","label":"Colision Detection"},
 		{"id":"c996b9cbd09e1267","type":"group","x":-2200,"y":-80,"width":980,"height":1639,"label":"Game math"},
 		{"id":"888b8046c277ecbd","x":1880,"y":1840,"width":500,"height":560,"type":"group","label":"Dynamics"},
 		{"id":"fe90147f5898d086","type":"file","file":"Client Side.md","x":-200,"y":-180,"width":620,"height":460},
@@ -40,18 +40,20 @@
 		{"id":"67da86e472bf48fd","x":1959,"y":1940,"width":193,"height":50,"type":"file","file":"Buoyancy.md"},
 		{"id":"18b02ede6b9abb5f","x":2171,"y":1940,"width":173,"height":50,"type":"file","file":"Friction.md"},
 		{"id":"3f82fedff2ec98b0","x":1959,"y":2020,"width":386,"height":50,"type":"file","file":"Angular Velocity.md"},
-		{"id":"55c491fb2d7d20cd","x":-586,"y":1640,"width":400,"height":83,"type":"file","file":"Colision Detection.md"},
-		{"id":"01539e18acd59df6","x":480,"y":1894,"width":472,"height":67,"type":"file","file":"Broad Phase.md"},
-		{"id":"0a94510c6d5ed1b1","x":721,"y":2075,"width":400,"height":85,"type":"file","file":"Bounding Volume.md"},
-		{"id":"55caa1f61a7220c7","x":956,"y":2244,"width":165,"height":66,"type":"file","file":"OBB.md"},
-		{"id":"737379f47f34d55b","x":680,"y":2244,"width":241,"height":66,"type":"file","file":"AABB.md"},
-		{"id":"6ebdcfb961b7be18","x":280,"y":2073,"width":400,"height":87,"type":"file","file":"Spatial Partitioning.md"},
 		{"id":"77ac66268ec7354f","x":-531,"y":2342,"width":293,"height":86,"type":"file","file":"Concave.md"},
 		{"id":"2ad2b5a4092d3d16","x":-341,"y":2158,"width":257,"height":72,"type":"file","file":"Convexity.md"},
 		{"id":"8c4bab9a7571af66","x":-163,"y":2346,"width":325,"height":82,"type":"file","file":"Convexity.md"},
 		{"id":"742bf68519dbb347","x":-586,"y":2508,"width":403,"height":83,"type":"file","file":"Convex Decomposition.md"},
 		{"id":"88bdbf1d8ffd0733","x":-122,"y":2508,"width":243,"height":83,"type":"file","file":"Convex Hull.md"},
-		{"id":"5dce94bad5e37a79","x":280,"y":2243,"width":264,"height":67,"type":"file","file":"Sort & Sweep.md"}
+		{"id":"55c491fb2d7d20cd","x":-212,"y":1600,"width":400,"height":83,"type":"file","file":"Colision Detection.md"},
+		{"id":"6ebdcfb961b7be18","x":303,"y":1988,"width":400,"height":87,"type":"file","file":"Spatial Partitioning.md"},
+		{"id":"01539e18acd59df6","x":503,"y":1809,"width":472,"height":67,"type":"file","file":"Broad Phase.md"},
+		{"id":"0a94510c6d5ed1b1","x":744,"y":1990,"width":400,"height":85,"type":"file","file":"Bounding Volume.md"},
+		{"id":"55caa1f61a7220c7","x":979,"y":2159,"width":165,"height":66,"type":"file","file":"OBB.md"},
+		{"id":"737379f47f34d55b","x":703,"y":2159,"width":241,"height":66,"type":"file","file":"AABB.md"},
+		{"id":"5dce94bad5e37a79","x":303,"y":2158,"width":264,"height":67,"type":"file","file":"Sort & Sweep.md"},
+		{"id":"b6db808cbe76bfe1","x":567,"y":2252,"width":126,"height":50,"type":"file","file":"BVH.md"},
+		{"id":"a4d35e440f821413","x":554,"y":2392,"width":190,"height":73,"type":"file","file":"DBVT.md"}
 	],
 	"edges":[
 		{"id":"b8877c1879cbced6","fromNode":"8c7b0548babaab26","fromSide":"bottom","toNode":"fe90147f5898d086","toSide":"top"},
@@ -67,9 +69,7 @@
 		{"id":"044c9df1c279bbea","fromNode":"fe90147f5898d086","fromSide":"bottom","toNode":"e25e59b22450728a","toSide":"top"},
 		{"id":"94bfb7ed89b9731d","fromNode":"e25e59b22450728a","fromSide":"left","toNode":"c996b9cbd09e1267","toSide":"right"},
 		{"id":"304ba48e4210ea43","fromNode":"e25e59b22450728a","fromSide":"right","toNode":"fecb8c7319339d42","toSide":"top"},
-		{"id":"cf5666a69a0a5c34","fromNode":"fecb8c7319339d42","fromSide":"bottom","toNode":"55c491fb2d7d20cd","toSide":"top"},
 		{"id":"afe01cd157033c63","fromNode":"86bc697ed7bd852e","fromSide":"bottom","toNode":"888b8046c277ecbd","toSide":"top"},
-		{"id":"235857b97fc3c037","fromNode":"55c491fb2d7d20cd","fromSide":"bottom","toNode":"3c202402e32b7554","toSide":"top"},
 		{"id":"98d3f4bc78668a1d","fromNode":"c86cd5433a0d2883","fromSide":"bottom","toNode":"b9de9fb9a5b6a03e","toSide":"top"},
 		{"id":"06fc62271ae65d91","fromNode":"c86cd5433a0d2883","fromSide":"bottom","toNode":"2ad2b5a4092d3d16","toSide":"top"},
 		{"id":"a3eea62b4b83d618","fromNode":"b9de9fb9a5b6a03e","fromSide":"bottom","toNode":"260bd7374c712e1f","toSide":"top"},
@@ -84,6 +84,12 @@
 		{"id":"4ab248e40e031000","fromNode":"0a94510c6d5ed1b1","fromSide":"bottom","toNode":"55caa1f61a7220c7","toSide":"top"},
 		{"id":"882b613517c3f127","fromNode":"0a94510c6d5ed1b1","fromSide":"bottom","toNode":"737379f47f34d55b","toSide":"top"},
 		{"id":"323fcc17eb7ebf8b","fromNode":"01539e18acd59df6","fromSide":"bottom","toNode":"6ebdcfb961b7be18","toSide":"top"},
-		{"id":"adc8e6f8a29dc5cb","fromNode":"6ebdcfb961b7be18","fromSide":"bottom","toNode":"5dce94bad5e37a79","toSide":"top"}
+		{"id":"adc8e6f8a29dc5cb","fromNode":"6ebdcfb961b7be18","fromSide":"bottom","toNode":"5dce94bad5e37a79","toSide":"top"},
+		{"id":"32c07164d21d328f","fromNode":"6ebdcfb961b7be18","fromSide":"bottom","toNode":"b6db808cbe76bfe1","toSide":"top"},
+		{"id":"5a71156f0bed69df","fromNode":"b6db808cbe76bfe1","fromSide":"bottom","toNode":"a4d35e440f821413","toSide":"top"},
+		{"id":"bc96a772f146f4eb","fromNode":"fecb8c7319339d42","fromSide":"bottom","toNode":"3c202402e32b7554","toSide":"top"},
+		{"id":"2122c505441f0e6d","fromNode":"55c491fb2d7d20cd","fromSide":"bottom","toNode":"01539e18acd59df6","toSide":"top"},
+		{"id":"dbeb6eb646afd9e2","fromNode":"55c491fb2d7d20cd","fromSide":"bottom","toNode":"c86cd5433a0d2883","toSide":"top"},
+		{"id":"dd8d0133ed7f0a62","fromNode":"55c491fb2d7d20cd","fromSide":"bottom","toNode":"0e9ebf62167a1b66","toSide":"top"}
 	]
 }
