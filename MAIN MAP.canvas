@@ -3,7 +3,7 @@
 		{"id":"ac497645ffe9c4c2","x":1048,"y":1520,"width":2632,"height":1400,"type":"group","label":"Colision Detection"},
 		{"id":"c996b9cbd09e1267","type":"group","x":-2960,"y":-79,"width":980,"height":1639,"label":"Game math"},
 		{"id":"5e213bca4a030b3f","x":1048,"y":740,"width":1069,"height":600,"type":"group","label":"Dynamics"},
-		{"id":"736c60af1d658853","x":7021,"y":1768,"width":400,"height":400,"type":"file","file":"IP.md"},
+		{"id":"f2b7a33e14fe465b","x":6608,"y":5301,"width":400,"height":400,"type":"file","file":"Databases.md"},
 		{"id":"e25e59b22450728a","type":"file","file":"Game Mathematics.md","x":-978,"y":509,"width":875,"height":480},
 		{"id":"fecb8c7319339d42","x":-978,"y":1196,"width":875,"height":363,"type":"file","file":"Game Physics.md"},
 		{"id":"55c491fb2d7d20cd","x":1068,"y":1808,"width":400,"height":83,"type":"file","file":"Colision Detection.md"},
@@ -65,7 +65,14 @@
 		{"id":"8fce660a56dea9d7","x":6000,"y":395,"width":400,"height":400,"type":"file","file":"TCP.md"},
 		{"id":"b5e9abf48b081c23","x":7027,"y":395,"width":400,"height":400,"type":"file","file":"UDP.md"},
 		{"id":"fe90147f5898d086","type":"file","file":"Client Side.md","x":-1536,"y":-479,"width":3004,"height":460},
-		{"id":"5ec7f037afb91e5b","x":7012,"y":1142,"width":400,"height":400,"type":"file","file":"TCP vs UDP.md"}
+		{"id":"5ec7f037afb91e5b","x":7012,"y":1142,"width":400,"height":400,"type":"file","file":"TCP vs UDP.md"},
+		{"id":"736c60af1d658853","x":7021,"y":1768,"width":400,"height":400,"type":"file","file":"IP.md"},
+		{"id":"daaf876189ff4497","x":6989,"y":2320,"width":476,"height":400,"type":"file","file":"Programing Languages 2.md"},
+		{"id":"94d537f34517521e","x":7012,"y":2840,"width":400,"height":400,"type":"file","file":"Socket Programing.md"},
+		{"id":"80d43f162220e4f7","x":7015,"y":3429,"width":400,"height":400,"type":"file","file":"Serialization.md"},
+		{"id":"7b96354f9d52cda5","x":6996,"y":4022,"width":400,"height":400,"type":"file","file":"Multithreading.md"},
+		{"id":"debf72c5e0d8c2c1","x":6621,"y":4640,"width":400,"height":400,"type":"file","file":"Programming Techniques.md"},
+		{"id":"a4df3f1d31576c2b","x":7348,"y":4660,"width":400,"height":400,"type":"file","file":"Synchronization.md"}
 	],
 	"edges":[
 		{"id":"b8877c1879cbced6","fromNode":"8c7b0548babaab26","fromSide":"bottom","toNode":"fe90147f5898d086","toSide":"top"},
@@ -122,6 +129,13 @@
 		{"id":"36d6cb391aedcc19","fromNode":"f0d2f589cd1c64ad","fromSide":"bottom","toNode":"8fce660a56dea9d7","toSide":"top"},
 		{"id":"f6ccc19d4d11a54b","fromNode":"f0d2f589cd1c64ad","fromSide":"bottom","toNode":"b5e9abf48b081c23","toSide":"top"},
 		{"id":"0020269589c09780","fromNode":"b5e9abf48b081c23","fromSide":"bottom","toNode":"5ec7f037afb91e5b","toSide":"top"},
-		{"id":"ae11dfcde546894a","fromNode":"5ec7f037afb91e5b","fromSide":"bottom","toNode":"736c60af1d658853","toSide":"top"}
+		{"id":"ae11dfcde546894a","fromNode":"5ec7f037afb91e5b","fromSide":"bottom","toNode":"736c60af1d658853","toSide":"top"},
+		{"id":"9b19c677a34d3e8b","fromNode":"736c60af1d658853","fromSide":"bottom","toNode":"daaf876189ff4497","toSide":"top"},
+		{"id":"c4ca4676dc048d8d","fromNode":"daaf876189ff4497","fromSide":"bottom","toNode":"94d537f34517521e","toSide":"top"},
+		{"id":"8adaf56b75d6bb81","fromNode":"94d537f34517521e","fromSide":"bottom","toNode":"80d43f162220e4f7","toSide":"top"},
+		{"id":"069906b55cd293be","fromNode":"80d43f162220e4f7","fromSide":"bottom","toNode":"7b96354f9d52cda5","toSide":"top"},
+		{"id":"042a2cc790ca8926","fromNode":"7b96354f9d52cda5","fromSide":"bottom","toNode":"debf72c5e0d8c2c1","toSide":"top"},
+		{"id":"21abe75085b7ef3d","fromNode":"7b96354f9d52cda5","fromSide":"bottom","toNode":"a4df3f1d31576c2b","toSide":"top"},
+		{"id":"16717f6f38afc0d3","fromNode":"debf72c5e0d8c2c1","fromSide":"bottom","toNode":"f2b7a33e14fe465b","toSide":"top"}
 	]
 }
