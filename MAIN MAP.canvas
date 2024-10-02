@@ -24,13 +24,8 @@
 		{"id":"97f4fa3ed07e44d9","x":-3360,"y":639,"width":400,"height":86,"type":"file","file":"Catmull-Rom.md"},
 		{"id":"e25e59b22450728a","type":"file","file":"Game Mathematics.md","x":-978,"y":509,"width":875,"height":480},
 		{"id":"fecb8c7319339d42","x":110,"y":1274,"width":386,"height":75,"type":"file","file":"Game Physics.md"},
-		{"id":"77ac66268ec7354f","x":-333,"y":2356,"width":293,"height":86,"type":"file","file":"Concave.md"},
 		{"id":"0e9ebf62167a1b66","x":-1215,"y":1889,"width":311,"height":76,"type":"file","file":"CCD.md"},
 		{"id":"c86cd5433a0d2883","x":-842,"y":1894,"width":583,"height":67,"type":"file","file":"Narrow Phase.md"},
-		{"id":"742bf68519dbb347","x":-388,"y":2522,"width":403,"height":83,"type":"file","file":"Convex Decomposition.md"},
-		{"id":"8c4bab9a7571af66","x":35,"y":2360,"width":325,"height":82,"type":"file","file":"Convexity.md"},
-		{"id":"88bdbf1d8ffd0733","x":76,"y":2522,"width":243,"height":83,"type":"file","file":"Convex Hull.md"},
-		{"id":"2ad2b5a4092d3d16","x":-143,"y":2172,"width":257,"height":72,"type":"file","file":"Convexity.md"},
 		{"id":"b9de9fb9a5b6a03e","x":-1059,"y":2144,"width":258,"height":73,"type":"file","file":"Intersection.md"},
 		{"id":"260bd7374c712e1f","x":-812,"y":2347,"width":161,"height":71,"type":"file","file":"SAT.md"},
 		{"id":"db89c0308b2c7ba0","x":-1011,"y":2347,"width":163,"height":71,"type":"file","file":"GJK.md"},
@@ -49,7 +44,14 @@
 		{"id":"01539e18acd59df6","x":480,"y":1894,"width":472,"height":67,"type":"file","file":"Broad Phase.md"},
 		{"id":"0a94510c6d5ed1b1","x":721,"y":2075,"width":400,"height":85,"type":"file","file":"Bounding Volume.md"},
 		{"id":"55caa1f61a7220c7","x":956,"y":2244,"width":165,"height":66,"type":"file","file":"OBB.md"},
-		{"id":"737379f47f34d55b","x":680,"y":2244,"width":241,"height":66,"type":"file","file":"AABB.md"}
+		{"id":"737379f47f34d55b","x":680,"y":2244,"width":241,"height":66,"type":"file","file":"AABB.md"},
+		{"id":"6ebdcfb961b7be18","x":280,"y":2073,"width":400,"height":87,"type":"file","file":"Spatial Partitioning.md"},
+		{"id":"77ac66268ec7354f","x":-531,"y":2342,"width":293,"height":86,"type":"file","file":"Concave.md"},
+		{"id":"2ad2b5a4092d3d16","x":-341,"y":2158,"width":257,"height":72,"type":"file","file":"Convexity.md"},
+		{"id":"8c4bab9a7571af66","x":-163,"y":2346,"width":325,"height":82,"type":"file","file":"Convexity.md"},
+		{"id":"742bf68519dbb347","x":-586,"y":2508,"width":403,"height":83,"type":"file","file":"Convex Decomposition.md"},
+		{"id":"88bdbf1d8ffd0733","x":-122,"y":2508,"width":243,"height":83,"type":"file","file":"Convex Hull.md"},
+		{"id":"5dce94bad5e37a79","x":280,"y":2243,"width":264,"height":67,"type":"file","file":"Sort & Sweep.md"}
 	],
 	"edges":[
 		{"id":"b8877c1879cbced6","fromNode":"8c7b0548babaab26","fromSide":"bottom","toNode":"fe90147f5898d086","toSide":"top"},
@@ -80,6 +82,8 @@
 		{"id":"70d9a3dd3ac0262d","fromNode":"fecb8c7319339d42","fromSide":"bottom","toNode":"86bc697ed7bd852e","toSide":"top"},
 		{"id":"f626b5aaf2162121","fromNode":"01539e18acd59df6","fromSide":"bottom","toNode":"0a94510c6d5ed1b1","toSide":"top"},
 		{"id":"4ab248e40e031000","fromNode":"0a94510c6d5ed1b1","fromSide":"bottom","toNode":"55caa1f61a7220c7","toSide":"top"},
-		{"id":"882b613517c3f127","fromNode":"0a94510c6d5ed1b1","fromSide":"bottom","toNode":"737379f47f34d55b","toSide":"top"}
+		{"id":"882b613517c3f127","fromNode":"0a94510c6d5ed1b1","fromSide":"bottom","toNode":"737379f47f34d55b","toSide":"top"},
+		{"id":"323fcc17eb7ebf8b","fromNode":"01539e18acd59df6","fromSide":"bottom","toNode":"6ebdcfb961b7be18","toSide":"top"},
+		{"id":"adc8e6f8a29dc5cb","fromNode":"6ebdcfb961b7be18","fromSide":"bottom","toNode":"5dce94bad5e37a79","toSide":"top"}
 	]
 }
