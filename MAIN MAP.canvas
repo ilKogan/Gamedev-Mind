@@ -1,6 +1,7 @@
 {
 	"nodes":[
 		{"id":"c996b9cbd09e1267","type":"group","x":-2200,"y":-80,"width":980,"height":1639,"label":"Game math"},
+		{"id":"3c202402e32b7554","x":-840,"y":1995,"width":1240,"height":645,"type":"group","label":"Colision Detection"},
 		{"id":"888b8046c277ecbd","x":640,"y":1840,"width":500,"height":560,"type":"group","label":"Dynamics"},
 		{"id":"fe90147f5898d086","type":"file","file":"Client Side.md","x":-200,"y":-180,"width":620,"height":460},
 		{"id":"8c7b0548babaab26","type":"text","text":"# Gamedev\n","x":295,"y":-480,"width":250,"height":60},
@@ -34,7 +35,9 @@
 		{"id":"18b02ede6b9abb5f","x":931,"y":1940,"width":173,"height":50,"type":"file","file":"Friction.md"},
 		{"id":"3f82fedff2ec98b0","x":719,"y":2020,"width":386,"height":50,"type":"file","file":"Angular Velocity.md"},
 		{"id":"55c491fb2d7d20cd","x":-240,"y":1640,"width":400,"height":83,"type":"file","file":"Colision Detection.md"},
-		{"id":"0e9ebf62167a1b66","x":-227,"y":2015,"width":400,"height":85,"type":"file","file":"CCD.md"}
+		{"id":"0e9ebf62167a1b66","x":-225,"y":2040,"width":385,"height":80,"type":"file","file":"CCD.md"},
+		{"id":"01539e18acd59df6","x":-32,"y":2480,"width":385,"height":85,"type":"file","file":"Broad Phase.md"},
+		{"id":"c86cd5433a0d2883","x":-40,"y":2360,"width":385,"height":61,"type":"file","file":"Narrow Phase.md"}
 	],
 	"edges":[
 		{"id":"b8877c1879cbced6","fromNode":"8c7b0548babaab26","fromSide":"bottom","toNode":"fe90147f5898d086","toSide":"top"},
@@ -53,6 +56,6 @@
 		{"id":"304ba48e4210ea43","fromNode":"e25e59b22450728a","fromSide":"right","toNode":"fecb8c7319339d42","toSide":"top"},
 		{"id":"cf5666a69a0a5c34","fromNode":"fecb8c7319339d42","fromSide":"bottom","toNode":"55c491fb2d7d20cd","toSide":"top"},
 		{"id":"afe01cd157033c63","fromNode":"86bc697ed7bd852e","fromSide":"bottom","toNode":"888b8046c277ecbd","toSide":"top"},
-		{"id":"b5ed53a5349a79f6","fromNode":"55c491fb2d7d20cd","fromSide":"bottom","toNode":"0e9ebf62167a1b66","toSide":"top"}
+		{"id":"235857b97fc3c037","fromNode":"55c491fb2d7d20cd","fromSide":"bottom","toNode":"3c202402e32b7554","toSide":"top"}
 	]
 }
