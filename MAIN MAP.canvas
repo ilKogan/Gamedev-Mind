@@ -4,7 +4,6 @@
 		{"id":"c996b9cbd09e1267","type":"group","x":-2960,"y":-79,"width":980,"height":1639,"label":"Game math"},
 		{"id":"5e213bca4a030b3f","x":1048,"y":740,"width":1069,"height":600,"type":"group","label":"Dynamics"},
 		{"id":"fe90147f5898d086","type":"file","file":"Client Side.md","x":-200,"y":-180,"width":620,"height":460},
-		{"id":"8c7b0548babaab26","type":"text","text":"# Gamedev\n","x":295,"y":-480,"width":250,"height":60},
 		{"id":"e25e59b22450728a","type":"file","file":"Game Mathematics.md","x":-978,"y":509,"width":875,"height":480},
 		{"id":"fecb8c7319339d42","x":-978,"y":1196,"width":875,"height":363,"type":"file","file":"Game Physics.md"},
 		{"id":"55c491fb2d7d20cd","x":1068,"y":1808,"width":400,"height":83,"type":"file","file":"Colision Detection.md"},
@@ -57,7 +56,11 @@
 		{"id":"0687eada2f9d9b77","x":-978,"y":1840,"width":875,"height":400,"type":"file","file":"Game Engine.md"},
 		{"id":"bfddce2b01783326","x":-978,"y":2537,"width":875,"height":400,"type":"file","file":"Programming Languages.md"},
 		{"id":"acb71c519edf3783","x":-978,"y":3227,"width":875,"height":400,"type":"file","file":"Computer Graphics.md"},
-		{"id":"37a3de6ff17eade6","x":-978,"y":3840,"width":875,"height":400,"type":"file","file":"Graphics API.md"}
+		{"id":"37a3de6ff17eade6","x":-978,"y":3840,"width":875,"height":400,"type":"file","file":"Graphics API.md"},
+		{"id":"bb78e163e5fc31f2","x":-978,"y":4499,"width":875,"height":400,"type":"file","file":"Game Ai.md"},
+		{"id":"51c7c95c93a53b6f","x":-978,"y":5131,"width":875,"height":309,"type":"file","file":"Game Ai Deeper.md"},
+		{"id":"7cd4836be846d9ed","x":-978,"y":5671,"width":875,"height":329,"type":"file","file":"Advanced Rendering.md"},
+		{"id":"8c7b0548babaab26","type":"text","text":"# Gamedev\n","x":1747,"y":-1360,"width":665,"height":100}
 	],
 	"edges":[
 		{"id":"b8877c1879cbced6","fromNode":"8c7b0548babaab26","fromSide":"bottom","toNode":"fe90147f5898d086","toSide":"top"},
@@ -106,6 +109,9 @@
 		{"id":"ecf302e48cdb8cbc","fromNode":"fecb8c7319339d42","fromSide":"bottom","toNode":"0687eada2f9d9b77","toSide":"top"},
 		{"id":"1a071ca1b86d8edf","fromNode":"0687eada2f9d9b77","fromSide":"bottom","toNode":"bfddce2b01783326","toSide":"top"},
 		{"id":"98dcf92cf9475dbd","fromNode":"bfddce2b01783326","fromSide":"bottom","toNode":"acb71c519edf3783","toSide":"top"},
-		{"id":"79b72d8d5f358bd5","fromNode":"acb71c519edf3783","fromSide":"bottom","toNode":"37a3de6ff17eade6","toSide":"top"}
+		{"id":"79b72d8d5f358bd5","fromNode":"acb71c519edf3783","fromSide":"bottom","toNode":"37a3de6ff17eade6","toSide":"top"},
+		{"id":"b5f397c554696a40","fromNode":"37a3de6ff17eade6","fromSide":"bottom","toNode":"bb78e163e5fc31f2","toSide":"top"},
+		{"id":"d64f434db9201422","fromNode":"bb78e163e5fc31f2","fromSide":"bottom","toNode":"51c7c95c93a53b6f","toSide":"top"},
+		{"id":"9db1329717266c76","fromNode":"51c7c95c93a53b6f","fromSide":"bottom","toNode":"7cd4836be846d9ed","toSide":"top"}
 	]
 }
