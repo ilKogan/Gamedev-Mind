@@ -910,3 +910,236 @@ Route::middleware(['auth', 'verified'])->group(function () {
 4. Красивым и удобным интерфейсом
 5. Поддержкой кастомных полей
 
+Отлично. Давайте разберем процесс развертывания Laravel проекта на сервере.
+
+# Руководство по развертыванию Laravel проекта
+
+## 1. Подготовка сервера
+
+### Установка необходимого ПО
+```bash
+# Обновление пакетов
+sudo apt update
+sudo apt upgrade -y
+
+# Установка необходимых пакетов
+sudo apt install -y nginx mysql-server php8.1-fpm php8.1-cli php8.1-mysql \
+php8.1-mbstring php8.1-xml php8.1-curl php8.1-zip php8.1-gd \
+composer git unzip
+
+# Настройка MySQL
+sudo mysql_secure_installation
+```
+
+### Создание базы данных
+```bash
+mysql -u root -p
+CREATE DATABASE your_database;
+CREATE USER 'your_user'@'localhost' IDENTIFIED BY 'your_password';
+GRANT ALL PRIVILEGES ON your_database.* TO 'your_user'@'localhost';
+FLUSH PRIVILEGES;
+exit;
+```
+
+### Настройка Nginx
+```nginx
+server {
+    listen 80;
+    server_name your-domain.com;
+    root /var/www/your-project/public;
+
+    add_header X-Frame-Options "SAMEORIGIN";
+    add_header X-XSS-Protection "1; mode=block";
+    add_header X-Content-Type-Options "nosniff";
+
+    index index.php;
+
+    charset utf-8;
+
+    location / {
+        try_files $uri $uri/ /index.php?$query_string;
+    }
+
+    location = /favicon.ico { access_log off; log_not_found off; }
+    location = /robots.txt  { access_log off; log_not_found off; }
+
+    error_page 404 /index.php;
+
+    location ~ \.php$ {
+        fastcgi_pass unix:/var/run/php/php8.1-fpm.sock;
+        fastcgi_param SCRIPT_FILENAME $realpath_root$fastcgi_script_name;
+        include fastcgi_params;
+    }
+
+    location ~ /\.(?!well-known).* {
+        deny all;
+    }
+}
+```
+
+## 2. Развертывание проекта
+
+### Клонирование и настройка проекта
+```bash
+# Создание директории и настройка прав
+sudo mkdir -p /var/www/your-project
+sudo chown -R $USER:www-data /var/www/your-project
+
+# Клонирование репозитория
+git clone your-repository.git /var/www/your-project
+
+# Переход в директорию проекта
+cd /var/www/your-project
+
+# Установка зависимостей
+composer install --no-dev --optimize-autoloader
+
+# Копирование и настройка .env
+cp .env.example .env
+php artisan key:generate
+
+# Настройка прав доступа
+sudo chown -R www-data:www-data storage bootstrap/cache
+sudo chmod -R 775 storage bootstrap/cache
+```
+
+### Настройка .env файла
+```env
+APP_NAME=YourApp
+APP_ENV=production
+APP_KEY=base64:your-key
+APP_DEBUG=false
+APP_URL=https://your-domain.com
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=your_database
+DB_USERNAME=your_user
+DB_PASSWORD=your_password
+
+MAIL_MAILER=smtp
+MAIL_HOST=your-smtp-server
+MAIL_PORT=587
+MAIL_USERNAME=your-email
+MAIL_PASSWORD=your-password
+MAIL_ENCRYPTION=tls
+MAIL_FROM_ADDRESS=your-email
+MAIL_FROM_NAME="${APP_NAME}"
+```
+
+### Оптимизация Laravel
+```bash
+# Очистка и кэширование конфигурации
+php artisan config:cache
+php artisan route:cache
+php artisan view:cache
+
+# Запуск миграций
+php artisan migrate --force
+
+# Создание символической ссылки для storage
+php artisan storage:link
+```
+
+## 3. Настройка SSL (Let's Encrypt)
+```bash
+# Установка Certbot
+sudo apt install -y certbot python3-certbot-nginx
+
+# Получение SSL сертификата
+sudo certbot --nginx -d your-domain.com
+
+# Автоматическое обновление сертификата
+sudo systemctl enable certbot.timer
+sudo systemctl start certbot.timer
+```
+
+## 4. Настройка Supervisor для очередей Laravel
+```bash
+# Установка Supervisor
+sudo apt install -y supervisor
+
+# Создание конфигурации для Laravel
+sudo nano /etc/supervisor/conf.d/laravel-worker.conf
+```
+
+Содержимое конфигурации:
+```ini
+[program:laravel-worker]
+process_name=%(program_name)s_%(process_num)02d
+command=php /var/www/your-project/artisan queue:work
+autostart=true
+autorestart=true
+user=www-data
+numprocs=2
+redirect_stderr=true
+stdout_logfile=/var/www/your-project/storage/logs/worker.log
+stopwaitsecs=3600
+```
+
+```bash
+# Обновление и запуск Supervisor
+sudo supervisorctl reread
+sudo supervisorctl update
+sudo supervisorctl start laravel-worker:*
+```
+
+## 5. Настройка автоматического деплоя (опционально)
+
+### Создание деплой-скрипта
+```bash
+#!/bin/bash
+
+# deploy.sh
+cd /var/www/your-project
+
+# Pull latest changes
+git pull origin main
+
+# Install dependencies
+composer install --no-dev --optimize-autoloader
+
+# Clear caches
+php artisan config:cache
+php artisan route:cache
+php artisan view:cache
+
+# Run migrations
+php artisan migrate --force
+
+# Update permissions
+sudo chown -R www-data:www-data storage bootstrap/cache
+sudo chmod -R 775 storage bootstrap/cache
+
+# Restart queue workers
+sudo supervisorctl restart laravel-worker:*
+
+# Restart PHP-FPM
+sudo systemctl restart php8.1-fpm
+```
+
+Основные шаги при развертывании:
+
+1. **Подготовка сервера:**
+   - Установка LEMP стека (Linux, Nginx, MySQL, PHP)
+   - Настройка базы данных
+   - Настройка веб-сервера
+
+2. **Развертывание кода:**
+   - Клонирование репозитория
+   - Установка зависимостей
+   - Настройка окружения
+   - Запуск миграций
+
+3. **Безопасность:**
+   - Настройка SSL
+   - Правильные права доступа
+   - Отключение отладки
+
+4. **Оптимизация:**
+   - Кэширование конфигурации
+   - Настройка очередей
+   - Оптимизация PHP и MySQL
+
+Хотите, чтобы я подробнее объяснил какой-то из этих этапов или показал дополнительные настройки для улучшения производительности?
