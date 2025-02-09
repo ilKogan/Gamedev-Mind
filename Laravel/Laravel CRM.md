@@ -717,7 +717,9 @@ class UpdateProfileRequest extends FormRequest
         ];
     }
 }
+```
 
+```php
 // app/Http/Requests/BankAccountRequest.php
 namespace App\Http\Requests;
 
@@ -735,7 +737,9 @@ class BankAccountRequest extends FormRequest
         ];
     }
 }
+```
 
+```html
 Теперь создадим представления для профиля:
 
 <!-- resources/views/profile/show.blade.php -->
