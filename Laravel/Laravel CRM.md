@@ -608,8 +608,8 @@ protected $routeMiddleware = [
 3. Базовый интерфейс админ-панели со списком пользователей
 
 Отлично. Создадим контроллеры и представления для управления профилем и банковскими данными.
-```
-```
+
+```php
 <?php
 
 // app/Http/Controllers/ProfileController.php
@@ -656,7 +656,9 @@ class ProfileController extends Controller
             ->with('success', 'Profile updated successfully');
     }
 }
+```
 
+```php
 // app/Http/Controllers/BankAccountController.php
 namespace App\Http\Controllers;
 
@@ -689,7 +691,9 @@ class BankAccountController extends Controller
             ->with('success', 'Bank account information removed');
     }
 }
+```
 
+```php
 // app/Http/Requests/UpdateProfileRequest.php
 namespace App\Http\Requests;
 
