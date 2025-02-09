@@ -888,6 +888,8 @@ class BankAccountRequest extends FormRequest
     </div>
 </div>
 @endsection
+```
+
 
 Добавьте следующие маршруты в `routes/web.php`:
 
