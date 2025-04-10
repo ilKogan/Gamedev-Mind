@@ -7,7 +7,7 @@
 		{"id":"0a846f97395a6032","x":-1780,"y":493,"width":400,"height":132,"type":"file","file":"Vector.md"},
 		{"id":"9fc54576bedfdf8c","x":-1337,"y":505,"width":400,"height":120,"type":"file","file":"Matrix.md"},
 		{"id":"4e32626b709e0bd1","x":-1780,"y":679,"width":843,"height":134,"type":"file","file":"Linear Transformation.md"},
-		{"id":"9af7f5223771eb7d","x":-1265,"y":859,"width":405,"height":120,"type":"file","file":"Affine Space.md"},
+		{"id":"9af7f5223771eb7d","x":-1265,"y":859,"width":405,"height":120,"type":"file","file":"Gamedev/Affine Space.md"},
 		{"id":"1aa96d3081c62222","x":-1785,"y":1014,"width":400,"height":110,"type":"file","file":"Perspective.md"},
 		{"id":"c9cc909151e7c6d8","x":-1265,"y":1073,"width":400,"height":103,"type":"file","file":"Projection.md"},
 		{"id":"e1e6e60f9ee94491","x":-1785,"y":1157,"width":400,"height":97,"type":"file","file":"Orthogonal.md"},
