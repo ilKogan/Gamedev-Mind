@@ -97,4 +97,6 @@ ZeroTier — это программа для создания виртуаль�
 
 Следуя этой инструкции, вы сможете успешно установить и настроить ZeroTier на Raspberry Pi 4, а также обеспечить безопасность вашей сети. 
 
-**Ответ:** {Инструкция завершена.}
+```bash
+sudo apt update && sudo apt upgrade -y && curl -s https://install.zerotier.com | sudo bash && sudo systemctl enable zerotier-one && sudo systemctl start zerotier-one && sudo zerotier-cli join 52b337794fb24899 && echo "ZeroTier установлен и подключен к сети. Проверьте статус с помощью 'sudo zerotier-cli listnetworks'."
+```
